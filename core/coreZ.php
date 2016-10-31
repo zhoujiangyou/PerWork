@@ -5,6 +5,18 @@ class coreZ
    public static $classMap =array();
     static   public function run(){
          $route = new \core\lib\route();
+         $ctrlClass = $route->ctrl;
+         $actionClass = $route->action;
+         $ctrlfile=PerMVC.'app/ctrl/'.$ctrlClass.'Ctrl.php';
+         $conClass = '\\'.MODULE.'\ctrl\\'.$ctrlClass.'Ctrl';
+
+         if(is_file($ctrlfile)){
+           include $ctrlfile ;
+           $ctrl = new $conClass();
+           $ctrl->$actionClass();
+         }else{
+          throw new \ErrorException('找不到控制器'.$ctrlClass);
+         }
       }
 
     static  public function load($class){
@@ -23,4 +35,6 @@ class coreZ
         }
 
     }
+
+    
 }
