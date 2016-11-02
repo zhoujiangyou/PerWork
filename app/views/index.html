@@ -1,2 +1,7 @@
-<h1>这个就是视图文件</h1>
-<h3><?php echo $data ;?></h3>
+{% extends "layout/common.html"%}
+
+{% block content%}
+<div class="text-center">
+  <h1>{{ data }}</h1>
+</div>
+{% endblock %}

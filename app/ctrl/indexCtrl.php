@@ -1,11 +1,14 @@
 <?php
 namespace app\ctrl;
-class indexCtrl extends \core\lib\controller{
+use \core\lib\controller;
+class indexCtrl extends controller{
   public function index(){
-    echo 'this  is  controller index';
-    $this->assign('data','value');
+    $this->assign('data','hello word');
     $this->display('index');
-    $model = new \core\lib\model();
-  var_dump( $model->select('number','*',["id" => 100]) );exit(); 
+  }
+
+  public  function test(){
+    $this->assign('data','hello word');
+    $this->display('test');
   }
 }
