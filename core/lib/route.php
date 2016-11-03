@@ -6,6 +6,7 @@ class route{
      public function __construct(){
         if(isset($_SERVER['REQUEST_URI']) && $_SERVER['REQUEST_URI']!='/'){
            $path = $_SERVER['REQUEST_URI'];
+           $path= preg_replace("/(\\.)([\\s\\S]*)/",'',$path);
            $patharr= explode('/',trim($path,'/'));
            if(isset($patharr[0])){
              $this->ctrl=$patharr[0];
@@ -27,6 +28,6 @@ class route{
         }
          //增加日記記錄
          $log = log::getLogger();
-         $log->set_Info_log('请求为'. $this->ctrl.'/'.$this->action);
+         $log->set_Info_log('request is :'. $this->ctrl.'/'.$this->action);
      }
 }

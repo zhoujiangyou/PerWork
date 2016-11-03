@@ -465,6 +465,6 @@ class __TwigTemplate_5e1a56fced086f438bc7d002e66abc3f832df26c2720f34d4f10d38c301
 
 </body>
 </html>
-", "doc.html", "D:\\xampp2\\htdocs\\PerMVC\\app\\views\\doc.html");
+", "doc.html", "D:\\person_git\\Permvc\\PerMVC\\app\\views\\doc.html");
     }
 }
