@@ -30,7 +30,7 @@ class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f25
     <header>
       <nav class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">
           <div class=\"container\">
-                <h2>header</h2>
+
           </div>
       </nav>
    </header>
@@ -45,12 +45,13 @@ class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f25
     <footer>
       <nav class=\"navbar navbar-default navbar-fixed-bottom\" role=\"navigation\">
           <div class=\"container\">
-               <h2>footer</h2>
+
           </div>
       </nav>
     </footer>
   </body>
   <script type=\"text/javascript\" src=\"../public/js/bootstrap.min.js\">
+  <script type=\"text/javascript\" src=\"../public/js/jquery-3.0.0.js\">
 </html>
 ";
     }
@@ -70,7 +71,7 @@ class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f25
 
     public function getDebugInfo()
     {
-        return array (  62 => 21,  59 => 20,  43 => 23,  41 => 20,  20 => 1,);
+        return array (  63 => 21,  60 => 20,  43 => 23,  41 => 20,  20 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -96,7 +97,7 @@ class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f25
     <header>
       <nav class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">
           <div class=\"container\">
-                <h2>header</h2>
+
           </div>
       </nav>
    </header>
@@ -110,13 +111,14 @@ class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f25
     <footer>
       <nav class=\"navbar navbar-default navbar-fixed-bottom\" role=\"navigation\">
           <div class=\"container\">
-               <h2>footer</h2>
+
           </div>
       </nav>
     </footer>
   </body>
   <script type=\"text/javascript\" src=\"../public/js/bootstrap.min.js\">
+  <script type=\"text/javascript\" src=\"../public/js/jquery-3.0.0.js\">
 </html>
-", "layout/common.html", "D:\\xampp2\\htdocs\\PerMVC\\app\\views\\layout\\common.html");
+", "layout/common.html", "D:\\person_git\\Permvc\\PerMVC\\app\\views\\layout\\common.html");
     }
 }

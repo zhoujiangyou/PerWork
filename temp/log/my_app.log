@@ -1,0 +1,3 @@
+[2016-11-03 07:17:41] log.INFO: My logger is now ready [] []
+[2016-11-03 07:17:42] log.INFO: My logger is now ready [] []
+[2016-11-03 07:28:52] PerMVC.INFO: error ! [] []

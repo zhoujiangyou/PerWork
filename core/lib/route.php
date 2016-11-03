@@ -4,8 +4,6 @@ class route{
      public $ctrl;
      public $action;
      public function __construct(){
-        // echo 'route.construct';
-        // @var_dump($_SERVER['REQUEST_URI']);
         if(isset($_SERVER['REQUEST_URI']) && $_SERVER['REQUEST_URI']!='/'){
            $path = $_SERVER['REQUEST_URI'];
            $patharr= explode('/',trim($path,'/'));
@@ -27,5 +25,8 @@ class route{
             $this->ctrl = 'index';
             $this->action='index';
         }
+         //增加日記記錄
+         $log = log::getLogger();
+         $log->set_Info_log('请求为'. $this->ctrl.'/'.$this->action);
      }
 }

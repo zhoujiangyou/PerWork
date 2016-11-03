@@ -28,11 +28,11 @@ class __TwigTemplate_b6962ae839dae05fbe11bcc88e4e3eeb4e253597ddf3694586f33825d2f
     public function block_content($context, array $blocks = array())
     {
         // line 4
-        echo "<div class=\"text-center\">
-  <h1>";
+        echo "<div class=\"text-center\" style=\"margin-top: 23%\">
+  <div style=\"font-size: 120px\">";
         // line 5
         echo twig_escape_filter($this->env, (isset($context["data"]) ? $context["data"] : null), "html", null, true);
-        echo "</h1>
+        echo "</div>
 </div>
 ";
     }
@@ -65,10 +65,10 @@ class __TwigTemplate_b6962ae839dae05fbe11bcc88e4e3eeb4e253597ddf3694586f33825d2f
         return new Twig_Source("{% extends \"layout/common.html\"%}
 
 {% block content%}
-<div class=\"text-center\">
-  <h1>{{ data }}</h1>
+<div class=\"text-center\" style=\"margin-top: 23%\">
+  <div style=\"font-size: 120px\">{{ data }}</div>
 </div>
 {% endblock %}
-", "index.html", "D:\\xampp2\\htdocs\\PerMVC\\app\\views\\index.html");
+", "index.html", "D:\\person_git\\Permvc\\PerMVC\\app\\views\\index.html");
     }
 }
