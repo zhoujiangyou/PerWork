@@ -1,15 +1,23 @@
-# PerMVC
-简单mvc小框架
+# PerMVC 简介
 
-# 请在根目录下新建.htaccess文件以便重写url 隐藏index.php
-# 并将下列内容复制粘贴
-```php
-<IfModule mod_rewrite.c>
+简单个人框架，简单粗暴。适合小功率开发。
+
+## 环境配置
++ 下载文件
++ 入口文件为index.php
++ 在根目录下新建.htaccess文件，并将下列代码复制粘贴保存
+
+> ```
+> <IfModule mod_rewrite.c>
   Options +FollowSymlinks
   RewriteEngine On
     #默认情况
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^/?(.*)$ index.php?s=/$1 [QSA,PT,L]
-</IfModule>
-```
+ </IfModule>
+> ```
 
++ 访问localhost:80/index.php(也可以省略index.php)，默认控制器为index/index
+
++ 查看文档可访问doc/index.html
+ 
