@@ -18,12 +18,10 @@ class controller
 
         //show
          public function display($file){
-               $filed = PerMVC.'app/views/'.$file.'.html';
+               $filed = APPLICATION.'/'.$_SESSION['MODULE'].'/views/'.$file.'.html';
                if(is_file($filed)){
-                // extract($this->ass);
-                  // include $file;
                   \Twig_Autoloader::register();
-                  $loader = new \Twig_Loader_Filesystem('app/views');
+                  $loader = new \Twig_Loader_Filesystem('application/'.$_SESSION['MODULE'].'/views');
                   $twig = new \Twig_Environment($loader, array(
                       'cache' => 'temp/html',
                       'debug'=>DEBUG,
@@ -31,7 +29,7 @@ class controller
                   $template = $twig->loadTemplate($file.'.html');
                   $template->display($this->ass?$this->ass:'');
                }else{
-                  return false;
+                   throw new \ErrorException('没有找到匹配视图文件'.$file);
                }
          }
 

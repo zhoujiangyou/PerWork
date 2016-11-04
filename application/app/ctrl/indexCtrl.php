@@ -1,5 +1,5 @@
 <?php
-namespace app\ctrl;
+namespace application\app\ctrl;
 use \core\lib\controller;
 use \core\lib\log;
 class indexCtrl extends controller{
@@ -7,8 +7,7 @@ class indexCtrl extends controller{
 
     $log =log::getLogger();
     $log->set_info_log();
-    $this->assign('data','hello word');
-
+    $this->assign('data',$_SESSION['MODULE']);
     $this->display('index');
   }
 
