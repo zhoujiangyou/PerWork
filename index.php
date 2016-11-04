@@ -5,6 +5,7 @@ define('CORE',PerMVC.'/core');
 define('APP',PerMVC.'/app');
 define('DEBUG',true);
 define('MODULE','app');
+define('APPLICATION','application');
 
 include 'vendor/autoload.php';
 if(DEBUG){

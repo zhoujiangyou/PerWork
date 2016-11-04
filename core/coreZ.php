@@ -5,11 +5,11 @@ class coreZ
    public static $classMap =array();
     static   public function run(){
          $route = new \core\lib\route();
+         $moduleClass=$route->module;
          $ctrlClass = $route->ctrl;
          $actionClass = $route->action;
-         $ctrlfile=PerMVC.'app/ctrl/'.$ctrlClass.'Ctrl.php';
+         $ctrlfile=PerMVC.APPLICATION.'/'.$moduleClass.'/ctrl/'.$ctrlClass.'Ctrl.php';
          $conClass = '\\'.MODULE.'\ctrl\\'.$ctrlClass.'Ctrl';
-
          if(is_file($ctrlfile)){
            include $ctrlfile ;
            $ctrl = new $conClass();
@@ -19,11 +19,6 @@ class coreZ
          }
       }
 
-    /**
-     * @param $class
-     *
-     * @return bool
-     */
     static  public function load($class){
 
         if(isset($classMap[$class])){
