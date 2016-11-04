@@ -19,6 +19,11 @@ class coreZ
          }
       }
 
+    /**
+     * @param $class
+     *
+     * @return bool
+     */
     static  public function load($class){
 
         if(isset($classMap[$class])){

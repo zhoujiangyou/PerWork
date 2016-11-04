@@ -1,10 +1,5 @@
 <?php
-/*
- 定义常量
- 加载函数库
- 启动框架
 
-*/
 define('PerMVC',realpath(' /'));
 define('CORE',PerMVC.'/core');
 define('APP',PerMVC.'/app');
