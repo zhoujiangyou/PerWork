@@ -27,7 +27,7 @@ class route{
               $i+=2;
             }
         }else{
-            $this->module='home';
+            $this->module='app';
             $this->ctrl = 'index';
             $this->action='index';
         }
