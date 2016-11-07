@@ -1,7 +1,7 @@
 <?php
 
 /* layout/common.html */
-class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f2586ff8 extends Twig_Template
+class __TwigTemplate_3ef3ee6561ee05bb40d0ef57d5976536ea4001718dbd98fc2725a6c29712390d extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -23,8 +23,8 @@ class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f25
     <meta charset=\"utf-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
     <title>personal MVC</title>
-    <link rel=\"stylesheet\" href=\"../public/css/bootstrap.min.css\" type=\"text/css\" />
-    <link rel=\"stylesheet\" href=\"../public/css/my.css\" type=\"text/css\" />
+    <link rel=\"stylesheet\" href=\"../../../../public/css/bootstrap.min.css\" type=\"text/css\" />
+    <link rel=\"stylesheet\" href=\"../../public/css/my.css\" type=\"text/css\" />
   </head>
   <body>
     <header>
@@ -50,8 +50,9 @@ class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f25
       </nav>
     </footer>
   </body>
-  <script type=\"text/javascript\" src=\"../public/js/bootstrap.min.js\">
-  <script type=\"text/javascript\" src=\"../public/js/jquery-3.0.0.js\">
+  <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
+  <script type=\"text/javascript\" src=\"../../public/js/bootstrap.min.js\"></script>
+
 </html>
 ";
     }
@@ -71,7 +72,7 @@ class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f25
 
     public function getDebugInfo()
     {
-        return array (  63 => 21,  60 => 20,  43 => 23,  41 => 20,  20 => 1,);
+        return array (  64 => 21,  61 => 20,  43 => 23,  41 => 20,  20 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -90,8 +91,8 @@ class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f25
     <meta charset=\"utf-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
     <title>personal MVC</title>
-    <link rel=\"stylesheet\" href=\"../public/css/bootstrap.min.css\" type=\"text/css\" />
-    <link rel=\"stylesheet\" href=\"../public/css/my.css\" type=\"text/css\" />
+    <link rel=\"stylesheet\" href=\"../../../../public/css/bootstrap.min.css\" type=\"text/css\" />
+    <link rel=\"stylesheet\" href=\"../../public/css/my.css\" type=\"text/css\" />
   </head>
   <body>
     <header>
@@ -116,9 +117,10 @@ class __TwigTemplate_16c84172f6ce71f827b21fc68d383ec5b9a18616e84271b6d3341740f25
       </nav>
     </footer>
   </body>
-  <script type=\"text/javascript\" src=\"../public/js/bootstrap.min.js\">
-  <script type=\"text/javascript\" src=\"../public/js/jquery-3.0.0.js\">
+  <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
+  <script type=\"text/javascript\" src=\"../../public/js/bootstrap.min.js\"></script>
+
 </html>
-", "layout/common.html", "D:\\person_git\\Permvc\\PerMVC\\app\\views\\layout\\common.html");
+", "layout/common.html", "D:\\person_git\\Permvc\\PerMVC\\application\\admin\\views\\layout\\common.html");
     }
 }

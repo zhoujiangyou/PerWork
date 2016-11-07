@@ -1,7 +1,7 @@
 <?php
 
 /* index.html */
-class __TwigTemplate_b6962ae839dae05fbe11bcc88e4e3eeb4e253597ddf3694586f33825d2f1365f extends Twig_Template
+class __TwigTemplate_8b06b545f9f0f819a84cad35ac3830d1b7e26eaedabac6f56527a537c5fb3392 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -69,6 +69,6 @@ class __TwigTemplate_b6962ae839dae05fbe11bcc88e4e3eeb4e253597ddf3694586f33825d2f
   <div style=\"font-size: 120px\">{{ data }}</div>
 </div>
 {% endblock %}
-", "index.html", "D:\\person_git\\Permvc\\PerMVC\\app\\views\\index.html");
+", "index.html", "D:\\person_git\\Permvc\\PerMVC\\application\\admin\\views\\index.html");
     }
 }

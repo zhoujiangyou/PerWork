@@ -1,7 +1,7 @@
 <?php
 
 /* doc.html */
-class __TwigTemplate_5e1a56fced086f438bc7d002e66abc3f832df26c2720f34d4f10d38c301ba736 extends Twig_Template
+class __TwigTemplate_b80cfe524358c0d62fcc8d86e3d52c26506d2d3d3ac8e6897e68e780846a5eee extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -465,6 +465,6 @@ class __TwigTemplate_5e1a56fced086f438bc7d002e66abc3f832df26c2720f34d4f10d38c301
 
 </body>
 </html>
-", "doc.html", "D:\\person_git\\Permvc\\PerMVC\\app\\views\\doc.html");
+", "doc.html", "D:\\person_git\\Permvc\\PerMVC\\application\\admin\\views\\doc.html");
     }
 }
