@@ -11,7 +11,8 @@
     "catfan/Medoo": "^1.1",
     "twig/twig":"*",
     "monolog/monolog": "^1.21",
-    "codeguy/upload": "^1.3"
+    "codeguy/upload": "^1.3",
+    "hassankhan/config": "^0.10.0"
   },
   "repositories": {
     "packagist": {

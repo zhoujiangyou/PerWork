@@ -1,7 +1,8 @@
 <?php
 namespace core\lib;
 /**
- *
+ * Created by PhpStorm.
+ * User: 周海天
  */
 class controller
 {
@@ -10,7 +11,6 @@ class controller
         {
 
         }
-
 
         public function assign($name,$data){
             $this->ass[$name]=$data;

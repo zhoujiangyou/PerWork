@@ -1,5 +1,9 @@
 <?php
 namespace core\lib;
+    /**
+     * Created by PhpStorm.
+     * User: 周海天
+     */
 /**
  * 操纵文件类
  *

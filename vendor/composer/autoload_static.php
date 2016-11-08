@@ -19,6 +19,10 @@ class ComposerStaticInit7eaa1d0c5c3ccea13067ceb138df49bc
         array (
             'Psr\\Log\\' => 8,
         ),
+        'N' => 
+        array (
+            'Noodlehaus\\' => 11,
+        ),
         'M' => 
         array (
             'Monolog\\' => 8,
@@ -33,6 +37,10 @@ class ComposerStaticInit7eaa1d0c5c3ccea13067ceb138df49bc
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Noodlehaus\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hassankhan/config/src',
         ),
         'Monolog\\' => 
         array (

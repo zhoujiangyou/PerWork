@@ -20,4 +20,5 @@ include CORE.'/common/function.php';
 include CORE.'/coreZ.php';
 
 spl_autoload_register('\core\coreZ::load');
+
 \core\coreZ::run();
