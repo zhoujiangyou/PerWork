@@ -8,7 +8,7 @@ class __TwigTemplate_6fe6caa043cdd6d519ff1b1219ec0a8eadd7cbbefc71fe29292089c5f7a
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("layout/common.html", "index.html", 1);
+        $this->parent = $this->loadTemplate("common/views/common.html", "index.html", 1);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -16,7 +16,7 @@ class __TwigTemplate_6fe6caa043cdd6d519ff1b1219ec0a8eadd7cbbefc71fe29292089c5f7a
 
     protected function doGetParent(array $context)
     {
-        return "layout/common.html";
+        return "common/views/common.html";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -62,7 +62,7 @@ class __TwigTemplate_6fe6caa043cdd6d519ff1b1219ec0a8eadd7cbbefc71fe29292089c5f7a
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends \"layout/common.html\"%}
+        return new Twig_Source("{% extends \"common/views/common.html\"%}
 
 {% block content%}
 <div class=\"text-center\" style=\"margin-top: 23%\">

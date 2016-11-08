@@ -4,33 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>personal MVC</title>
-    <link rel="stylesheet" href="../../../../public/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../public/css/my.css" type="text/css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div class="container">
-
-          </div>
-      </nav>
-   </header>
-    <div class="container background">
+  {% include 'common/views/header.html' %}
+  <div class="container background">
     <content>
      {% block content%}
 
      {% endblock %}
     </content>
     </div>
-    <footer>
-      <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-          <div class="container">
-
-          </div>
-      </nav>
-    </footer>
+  {% include 'common/views/footer.html' %}
   </body>
   <script type="text/javascript" src="../../public/js/jquery-3.0.0.js"></script>
   <script type="text/javascript" src="../../public/js/bootstrap.min.js"></script>
-
 </html>

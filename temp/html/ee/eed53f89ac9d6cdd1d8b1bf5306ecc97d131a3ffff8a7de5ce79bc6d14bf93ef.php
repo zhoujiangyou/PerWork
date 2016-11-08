@@ -27,38 +27,32 @@ class __TwigTemplate_d0ccdfe24175da251ad06a2274efeba4132f12cf0ed890d5abb484c9dc6
     <link rel=\"stylesheet\" href=\"../../public/css/my.css\" type=\"text/css\" />
   </head>
   <body>
-    <header>
-      <nav class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">
-          <div class=\"container\">
-
-          </div>
-      </nav>
-   </header>
-    <div class=\"container background\">
+  ";
+        // line 11
+        $this->loadTemplate("layout/header.html", "layout/common.html", 11)->display($context);
+        // line 12
+        echo "  <div class=\"container background\">
     <content>
      ";
-        // line 20
+        // line 14
         $this->displayBlock('content', $context, $blocks);
-        // line 23
+        // line 17
         echo "    </content>
     </div>
-    <footer>
-      <nav class=\"navbar navbar-default navbar-fixed-bottom\" role=\"navigation\">
-          <div class=\"container\">
-
-          </div>
-      </nav>
-    </footer>
-  </body>
+  ";
+        // line 19
+        $this->loadTemplate("layout/footer.html", "layout/common.html", 19)->display($context);
+        // line 20
+        echo "  </body>
   <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
   <script type=\"text/javascript\" src=\"../../public/js/bootstrap.min.js\"></script>
 </html>";
     }
 
-    // line 20
+    // line 14
     public function block_content($context, array $blocks = array())
     {
-        // line 21
+        // line 15
         echo "
      ";
     }
@@ -68,9 +62,14 @@ class __TwigTemplate_d0ccdfe24175da251ad06a2274efeba4132f12cf0ed890d5abb484c9dc6
         return "layout/common.html";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  62 => 21,  59 => 20,  43 => 23,  41 => 20,  20 => 1,);
+        return array (  56 => 15,  53 => 14,  46 => 20,  44 => 19,  40 => 17,  38 => 14,  34 => 12,  32 => 11,  20 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -93,27 +92,15 @@ class __TwigTemplate_d0ccdfe24175da251ad06a2274efeba4132f12cf0ed890d5abb484c9dc6
     <link rel=\"stylesheet\" href=\"../../public/css/my.css\" type=\"text/css\" />
   </head>
   <body>
-    <header>
-      <nav class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">
-          <div class=\"container\">
-
-          </div>
-      </nav>
-   </header>
-    <div class=\"container background\">
+  {% include 'layout/header.html' %}
+  <div class=\"container background\">
     <content>
      {% block content%}
 
      {% endblock %}
     </content>
     </div>
-    <footer>
-      <nav class=\"navbar navbar-default navbar-fixed-bottom\" role=\"navigation\">
-          <div class=\"container\">
-
-          </div>
-      </nav>
-    </footer>
+  {% include 'layout/footer.html' %}
   </body>
   <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
   <script type=\"text/javascript\" src=\"../../public/js/bootstrap.min.js\"></script>

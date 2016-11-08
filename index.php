@@ -6,7 +6,7 @@ define('APP',PerMVC.'/app');
 define('DEBUG',true);
 define('MODULE','app');
 define('APPLICATION','application');
-
+ini_set('date.timezone','Asia/Shanghai');
 include 'vendor/autoload.php';
 if(DEBUG){
    $whoops = new \Whoops\Run;

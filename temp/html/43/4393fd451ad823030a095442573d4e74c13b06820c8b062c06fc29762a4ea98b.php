@@ -1,6 +1,6 @@
 <?php
 
-/* index.html */
+/* admin/views/index.html */
 class __TwigTemplate_8b06b545f9f0f819a84cad35ac3830d1b7e26eaedabac6f56527a537c5fb3392 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_8b06b545f9f0f819a84cad35ac3830d1b7e26eaedabac6f56527a537c5f
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("layout/common.html", "index.html", 1);
+        $this->parent = $this->loadTemplate("common/views/common.html", "admin/views/index.html", 1);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -16,7 +16,7 @@ class __TwigTemplate_8b06b545f9f0f819a84cad35ac3830d1b7e26eaedabac6f56527a537c5f
 
     protected function doGetParent(array $context)
     {
-        return "layout/common.html";
+        return "common/views/common.html";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -39,7 +39,7 @@ class __TwigTemplate_8b06b545f9f0f819a84cad35ac3830d1b7e26eaedabac6f56527a537c5f
 
     public function getTemplateName()
     {
-        return "index.html";
+        return "admin/views/index.html";
     }
 
     public function isTraitable()
@@ -62,13 +62,13 @@ class __TwigTemplate_8b06b545f9f0f819a84cad35ac3830d1b7e26eaedabac6f56527a537c5f
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends \"layout/common.html\"%}
+        return new Twig_Source("{% extends \"common/views/common.html\"%}
 
 {% block content%}
 <div class=\"text-center\" style=\"margin-top: 23%\">
   <div style=\"font-size: 120px\">{{ data }}</div>
 </div>
 {% endblock %}
-", "index.html", "D:\\person_git\\Permvc\\PerMVC\\application\\admin\\views\\index.html");
+", "admin/views/index.html", "D:\\person_git\\Permvc\\PerMVC\\application\\admin\\views\\index.html");
     }
 }
