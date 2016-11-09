@@ -12,13 +12,7 @@ class model extends \medoo
 
   function __construct()
   {
-    $option= array(
-      'database_type' => 'mysql',
-      'database_name' => 'test',
-      'server' => 'localhost',
-      'username' => 'root',
-      'password' => '',
-      'charset' => 'utf8',);
+    $option= C('database');
     parent::__construct($option);
   }
 }
