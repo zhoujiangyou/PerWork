@@ -39,7 +39,7 @@ class config{
      *
      * @return mixed|null
      */
-    public  function get($keyname, $default){
+    public  function get($keyname, $default=''){
         return $this->conf->get($keyname,$default);
     }
 
