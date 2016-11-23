@@ -1,6 +1,6 @@
 <?php
 
-/* index.html */
+/* app/views/index.html */
 class __TwigTemplate_6fe6caa043cdd6d519ff1b1219ec0a8eadd7cbbefc71fe29292089c5f7a3f4dd extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_6fe6caa043cdd6d519ff1b1219ec0a8eadd7cbbefc71fe29292089c5f7a
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("common/views/common.html", "index.html", 1);
+        $this->parent = $this->loadTemplate("common/views/common.html", "app/views/index.html", 1);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -34,12 +34,20 @@ class __TwigTemplate_6fe6caa043cdd6d519ff1b1219ec0a8eadd7cbbefc71fe29292089c5f7a
         echo twig_escape_filter($this->env, (isset($context["data"]) ? $context["data"] : null), "html", null, true);
         echo "</div>
 </div>
+<div class=\"btn btn-primary ajax-sub\">提交</div>
+<script type=\"text/javascript\">
+  \$('.ajax-sub').on(\"click\",function(){
+    \$.ajax({url:\"/app/index/ajaxTest\",success:function(result){
+      alert(result);
+    }});
+  });
+</script>
 ";
     }
 
     public function getTemplateName()
     {
-        return "index.html";
+        return "app/views/index.html";
     }
 
     public function isTraitable()
@@ -68,7 +76,16 @@ class __TwigTemplate_6fe6caa043cdd6d519ff1b1219ec0a8eadd7cbbefc71fe29292089c5f7a
 <div class=\"text-center\" style=\"margin-top: 23%\">
   <div style=\"font-size: 120px\">{{ data }}</div>
 </div>
+<div class=\"btn btn-primary ajax-sub\">提交</div>
+<script type=\"text/javascript\">
+  \$('.ajax-sub').on(\"click\",function(){
+    \$.ajax({url:\"/app/index/ajaxTest\",success:function(result){
+      alert(result);
+    }});
+  });
+</script>
 {% endblock %}
-", "index.html", "D:\\person_git\\Permvc\\PerMVC\\application\\app\\views\\index.html");
+
+", "app/views/index.html", "D:\\person_git\\Permvc\\PerMVC\\application\\app\\views\\index.html");
     }
 }

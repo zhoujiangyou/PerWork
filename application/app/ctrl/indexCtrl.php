@@ -16,4 +16,8 @@ class indexCtrl extends controller{
     $this->assign('data','hello word');
     $this->display('test');
   }
+
+  public function ajaxTest(){
+    echo  json_encode(array("statusCode"=>200),false);
+  }
 }

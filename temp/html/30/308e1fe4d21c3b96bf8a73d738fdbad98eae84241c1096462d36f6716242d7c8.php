@@ -25,34 +25,36 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
     <title>personal MVC</title>
     <link rel=\"stylesheet\" href=\"../../public/css/bootstrap.min.css\" type=\"text/css\" />
     <link rel=\"stylesheet\" href=\"../../public/css/my.css\" type=\"text/css\" />
+    <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
+
   </head>
   <body>
   ";
-        // line 11
-        $this->loadTemplate("common/views/header.html", "common/views/common.html", 11)->display($context);
-        // line 12
+        // line 13
+        $this->loadTemplate("common/views/header.html", "common/views/common.html", 13)->display($context);
+        // line 14
         echo "  <div class=\"container background\">
     <content>
      ";
-        // line 14
+        // line 16
         $this->displayBlock('content', $context, $blocks);
-        // line 17
+        // line 19
         echo "    </content>
     </div>
   ";
-        // line 19
-        $this->loadTemplate("common/views/footer.html", "common/views/common.html", 19)->display($context);
-        // line 20
+        // line 21
+        $this->loadTemplate("common/views/footer.html", "common/views/common.html", 21)->display($context);
+        // line 22
         echo "  </body>
-  <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
   <script type=\"text/javascript\" src=\"../../public/js/bootstrap.min.js\"></script>
+  <script type=\"text/javascript\" src=\"../../public/js/core.js\"></script>
 </html>";
     }
 
-    // line 14
+    // line 16
     public function block_content($context, array $blocks = array())
     {
-        // line 15
+        // line 17
         echo "
      ";
     }
@@ -69,7 +71,7 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
 
     public function getDebugInfo()
     {
-        return array (  56 => 15,  53 => 14,  46 => 20,  44 => 19,  40 => 17,  38 => 14,  34 => 12,  32 => 11,  20 => 1,);
+        return array (  58 => 17,  55 => 16,  48 => 22,  46 => 21,  42 => 19,  40 => 16,  36 => 14,  34 => 13,  20 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -90,6 +92,8 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
     <title>personal MVC</title>
     <link rel=\"stylesheet\" href=\"../../public/css/bootstrap.min.css\" type=\"text/css\" />
     <link rel=\"stylesheet\" href=\"../../public/css/my.css\" type=\"text/css\" />
+    <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
+
   </head>
   <body>
   {% include 'common/views/header.html' %}
@@ -102,8 +106,8 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
     </div>
   {% include 'common/views/footer.html' %}
   </body>
-  <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
   <script type=\"text/javascript\" src=\"../../public/js/bootstrap.min.js\"></script>
+  <script type=\"text/javascript\" src=\"../../public/js/core.js\"></script>
 </html>", "common/views/common.html", "D:\\person_git\\Permvc\\PerMVC\\application\\common\\views\\common.html");
     }
 }
