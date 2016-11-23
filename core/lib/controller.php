@@ -26,8 +26,9 @@ class controller
                       'cache' => 'temp/html',
                       'debug'=>DEBUG,
                   ));
+
                   $template = $twig->loadTemplate($_SESSION['MODULE'].'/views/'.$file.'.html');
-                  $template->display($this->ass?$this->ass:'');
+                  $template->display($this->ass?$this->ass:[]);
                }else{
                    throw new \ErrorException('没有找到匹配视图文件'.$file);
                }

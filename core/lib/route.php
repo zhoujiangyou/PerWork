@@ -35,8 +35,8 @@ class route{
             $this->ctrl = 'index';
             $this->action='index';
         }
-         //增加日記記錄
-         $log = log::getLogger();
-         $log->set_Info_log('request is :'. $this->ctrl.'/'.$this->action);
+//         //增加日記記錄
+//         $log = log::getLogger();
+//         $log->set_Info_log('request is :'. $this->ctrl.'/'.$this->action);
      }
 }
