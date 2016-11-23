@@ -8,16 +8,7 @@ class indexCtrl extends controller{
 
   $log =log::getLogger();
   $log->set_info_log();
-  $this->assign('data',$_SESSION['MODULE']);
+  $this->assign('data','欢迎使用PerWork');
   $this->display('index');
 }
-
-  public  function test(){
-    $this->assign('data','hello word');
-    $this->display('test');
-  }
-
-  public function ajaxTest(){
-    echo  json_encode(array("statusCode"=>200),false);
-  }
 }

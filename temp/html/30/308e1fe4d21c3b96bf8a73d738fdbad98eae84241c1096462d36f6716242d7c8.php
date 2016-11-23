@@ -25,9 +25,10 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
     <title>personal MVC</title>
     <link rel=\"stylesheet\" href=\"../../public/css/bootstrap.min.css\" type=\"text/css\" />
     <link rel=\"stylesheet\" href=\"../../public/css/my.css\" type=\"text/css\" />
-    <link href=\"../../public/css/font-awesomee.css\" rel=\"stylesheet\">
-    <link href=\"../../public/css/animate.css\" rel=\"stylesheet\">
-    <link href=\"../../public/css/stylef066.css?v=2.1.0\" rel=\"stylesheet\">
+    <link href=\"../../public/css/font-awesome.min.css\" type=\"text/css\" rel=\"stylesheet\">
+    <!--<link href=\"../../public/css/font-awesomee.css\" type=\"text/css\" rel=\"stylesheet\">-->
+    <link href=\"../../public/css/animate.css\" rel=\"stylesheet\" type=\"text/css\">
+    <link href=\"../../public/css/stylef066.css?v=2.1.0\" rel=\"stylesheet\" type=\"text/css\">
     <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
 
   </head>
@@ -35,23 +36,23 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
   <div id=\"wrapper\">
     <div id=\"page-wrapper\" class=\"gray-bg\">
   ";
-        // line 18
-        $this->loadTemplate("common/views/header.html", "common/views/common.html", 18)->display($context);
         // line 19
+        $this->loadTemplate("common/views/header.html", "common/views/common.html", 19)->display($context);
+        // line 20
         echo "    <div class=\"wrapper wrapper-content\">
       <div class=\"container\">
      ";
-        // line 21
+        // line 22
         $this->displayBlock('content', $context, $blocks);
-        // line 24
-        echo "    </div>
+        // line 25
+        echo "       </div>
     </div>
   ";
-        // line 26
-        $this->loadTemplate("common/views/footer.html", "common/views/common.html", 26)->display($context);
         // line 27
+        $this->loadTemplate("common/views/footer.html", "common/views/common.html", 27)->display($context);
+        // line 28
         echo "    </div>
-  </div>>
+  </div>
   <script type=\"text/javascript\" src=\"../../public/js/bootstrap.min.js\"></script>
   <script type=\"text/javascript\" src=\"../../public/js/core.js\"></script>
   <script src=\"../../public/js/plugins/metisMenu/jquery.metisMenu.js\"></script>
@@ -75,14 +76,13 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
   <!-- Peity demo -->
   <script src=\"../../public/js/demo/peity-demo.js\"></script>
   </body>
-
 </html>";
     }
 
-    // line 21
+    // line 22
     public function block_content($context, array $blocks = array())
     {
-        // line 22
+        // line 23
         echo "
      ";
     }
@@ -99,7 +99,7 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
 
     public function getDebugInfo()
     {
-        return array (  86 => 22,  83 => 21,  53 => 27,  51 => 26,  47 => 24,  45 => 21,  41 => 19,  39 => 18,  20 => 1,);
+        return array (  86 => 23,  83 => 22,  54 => 28,  52 => 27,  48 => 25,  46 => 22,  42 => 20,  40 => 19,  20 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -120,9 +120,10 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
     <title>personal MVC</title>
     <link rel=\"stylesheet\" href=\"../../public/css/bootstrap.min.css\" type=\"text/css\" />
     <link rel=\"stylesheet\" href=\"../../public/css/my.css\" type=\"text/css\" />
-    <link href=\"../../public/css/font-awesomee.css\" rel=\"stylesheet\">
-    <link href=\"../../public/css/animate.css\" rel=\"stylesheet\">
-    <link href=\"../../public/css/stylef066.css?v=2.1.0\" rel=\"stylesheet\">
+    <link href=\"../../public/css/font-awesome.min.css\" type=\"text/css\" rel=\"stylesheet\">
+    <!--<link href=\"../../public/css/font-awesomee.css\" type=\"text/css\" rel=\"stylesheet\">-->
+    <link href=\"../../public/css/animate.css\" rel=\"stylesheet\" type=\"text/css\">
+    <link href=\"../../public/css/stylef066.css?v=2.1.0\" rel=\"stylesheet\" type=\"text/css\">
     <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
 
   </head>
@@ -135,11 +136,11 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
      {% block content%}
 
      {% endblock %}
-    </div>
+       </div>
     </div>
   {% include 'common/views/footer.html' %}
     </div>
-  </div>>
+  </div>
   <script type=\"text/javascript\" src=\"../../public/js/bootstrap.min.js\"></script>
   <script type=\"text/javascript\" src=\"../../public/js/core.js\"></script>
   <script src=\"../../public/js/plugins/metisMenu/jquery.metisMenu.js\"></script>
@@ -163,7 +164,6 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
   <!-- Peity demo -->
   <script src=\"../../public/js/demo/peity-demo.js\"></script>
   </body>
-
 </html>", "common/views/common.html", "D:\\person_git\\Permvc\\PerMVC\\application\\common\\views\\common.html");
     }
 }

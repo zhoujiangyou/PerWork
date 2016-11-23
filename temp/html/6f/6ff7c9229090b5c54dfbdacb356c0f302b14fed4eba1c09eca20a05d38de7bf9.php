@@ -22,12 +22,12 @@ class __TwigTemplate_3805734f6574b93525b31ea23b015675b3d78b820ff23377b536a8e9881
             <button aria-controls=\"navbar\" aria-expanded=\"false\" data-target=\"#navbar\" data-toggle=\"collapse\" class=\"navbar-toggle collapsed\" type=\"button\">
                 <i class=\"fa fa-reorder\"></i>
             </button>
-            <a href=\"#\" class=\"navbar-brand\">Hplus</a>
+            <a href=\"#\" class=\"navbar-brand\">PerWork</a>
         </div>
         <div class=\"navbar-collapse collapse\" id=\"navbar\">
             <ul class=\"nav navbar-nav\">
                 <li class=\"active\">
-                    <a aria-expanded=\"false\" role=\"button\" href=\"layouts.html\"> 返回布局页面</a>
+                    <a aria-expanded=\"false\" role=\"button\" href=\"app/index/index\">主页</a>
                 </li>
                 <li class=\"dropdown\">
                     <a aria-expanded=\"false\" role=\"button\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"> 菜单 <span class=\"caret\"></span></a>
@@ -121,12 +121,12 @@ class __TwigTemplate_3805734f6574b93525b31ea23b015675b3d78b820ff23377b536a8e9881
             <button aria-controls=\"navbar\" aria-expanded=\"false\" data-target=\"#navbar\" data-toggle=\"collapse\" class=\"navbar-toggle collapsed\" type=\"button\">
                 <i class=\"fa fa-reorder\"></i>
             </button>
-            <a href=\"#\" class=\"navbar-brand\">Hplus</a>
+            <a href=\"#\" class=\"navbar-brand\">PerWork</a>
         </div>
         <div class=\"navbar-collapse collapse\" id=\"navbar\">
             <ul class=\"nav navbar-nav\">
                 <li class=\"active\">
-                    <a aria-expanded=\"false\" role=\"button\" href=\"layouts.html\"> 返回布局页面</a>
+                    <a aria-expanded=\"false\" role=\"button\" href=\"app/index/index\">主页</a>
                 </li>
                 <li class=\"dropdown\">
                     <a aria-expanded=\"false\" role=\"button\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"> 菜单 <span class=\"caret\"></span></a>
