@@ -6,11 +6,11 @@ use \core\lib\config;
 class indexCtrl extends controller{
   public function index(){
 
-    $log =log::getLogger();
-    $log->set_info_log();
-    $this->assign('data',$_SESSION['MODULE']);
-    $this->display('index');
-  }
+  $log =log::getLogger();
+  $log->set_info_log();
+  $this->assign('data',$_SESSION['MODULE']);
+  $this->display('index');
+}
 
   public  function test(){
     $this->assign('data','hello word');

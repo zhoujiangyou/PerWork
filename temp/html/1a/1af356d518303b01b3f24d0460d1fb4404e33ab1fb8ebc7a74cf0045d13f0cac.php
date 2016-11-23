@@ -34,14 +34,6 @@ class __TwigTemplate_6fe6caa043cdd6d519ff1b1219ec0a8eadd7cbbefc71fe29292089c5f7a
         echo twig_escape_filter($this->env, (isset($context["data"]) ? $context["data"] : null), "html", null, true);
         echo "</div>
 </div>
-<div class=\"btn btn-primary ajax-sub\">提交</div>
-<script type=\"text/javascript\">
-  \$('.ajax-sub').on(\"click\",function(){
-    \$.ajax({url:\"/app/index/ajaxTest\",success:function(result){
-      alert(result);
-    }});
-  });
-</script>
 ";
     }
 
@@ -76,14 +68,6 @@ class __TwigTemplate_6fe6caa043cdd6d519ff1b1219ec0a8eadd7cbbefc71fe29292089c5f7a
 <div class=\"text-center\" style=\"margin-top: 23%\">
   <div style=\"font-size: 120px\">{{ data }}</div>
 </div>
-<div class=\"btn btn-primary ajax-sub\">提交</div>
-<script type=\"text/javascript\">
-  \$('.ajax-sub').on(\"click\",function(){
-    \$.ajax({url:\"/app/index/ajaxTest\",success:function(result){
-      alert(result);
-    }});
-  });
-</script>
 {% endblock %}
 
 ", "app/views/index.html", "D:\\person_git\\Permvc\\PerMVC\\application\\app\\views\\index.html");

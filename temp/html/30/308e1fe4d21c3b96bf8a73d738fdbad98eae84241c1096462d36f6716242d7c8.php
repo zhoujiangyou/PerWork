@@ -25,36 +25,64 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
     <title>personal MVC</title>
     <link rel=\"stylesheet\" href=\"../../public/css/bootstrap.min.css\" type=\"text/css\" />
     <link rel=\"stylesheet\" href=\"../../public/css/my.css\" type=\"text/css\" />
+    <link href=\"../../public/css/font-awesomee.css\" rel=\"stylesheet\">
+    <link href=\"../../public/css/animate.css\" rel=\"stylesheet\">
+    <link href=\"../../public/css/stylef066.css?v=2.1.0\" rel=\"stylesheet\">
     <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
 
   </head>
-  <body>
+  <body class=\"top-navigation\">
+  <div id=\"wrapper\">
+    <div id=\"page-wrapper\" class=\"gray-bg\">
   ";
-        // line 13
-        $this->loadTemplate("common/views/header.html", "common/views/common.html", 13)->display($context);
-        // line 14
-        echo "  <div class=\"container background\">
-    <content>
-     ";
-        // line 16
-        $this->displayBlock('content', $context, $blocks);
+        // line 18
+        $this->loadTemplate("common/views/header.html", "common/views/common.html", 18)->display($context);
         // line 19
-        echo "    </content>
+        echo "    <div class=\"wrapper wrapper-content\">
+      <div class=\"container\">
+     ";
+        // line 21
+        $this->displayBlock('content', $context, $blocks);
+        // line 24
+        echo "    </div>
     </div>
   ";
-        // line 21
-        $this->loadTemplate("common/views/footer.html", "common/views/common.html", 21)->display($context);
-        // line 22
-        echo "  </body>
+        // line 26
+        $this->loadTemplate("common/views/footer.html", "common/views/common.html", 26)->display($context);
+        // line 27
+        echo "    </div>
+  </div>>
   <script type=\"text/javascript\" src=\"../../public/js/bootstrap.min.js\"></script>
   <script type=\"text/javascript\" src=\"../../public/js/core.js\"></script>
+  <script src=\"../../public/js/plugins/metisMenu/jquery.metisMenu.js\"></script>
+  <script src=\"../../public/js/plugins/slimscroll/jquery.slimscroll.min.js\"></script>
+
+  <!-- Custom and plugin javascript -->
+  <script src=\"../../public/js/hplus28b5.js\"></script>
+  <script src=\"../../public/js/plugins/pace/pace.min.js\"></script>
+
+  <!-- Flot -->
+  <script src=\"../../public/js/plugins/flot/jquery.flot.js\"></script>
+  <script src=\"../../public/js/plugins/flot/jquery.flot.tooltip.min.js\"></script>
+  <script src=\"../../public/js/plugins/flot/jquery.flot.resize.js\"></script>
+
+  <!-- ChartJS-->
+  <script src=\"../../public/js/plugins/chartJs/Chart.min.js\"></script>
+
+  <!-- Peity -->
+  <script src=\"../../public/js/plugins/peity/jquery.peity.min.js\"></script>
+
+  <!-- Peity demo -->
+  <script src=\"../../public/js/demo/peity-demo.js\"></script>
+  </body>
+
 </html>";
     }
 
-    // line 16
+    // line 21
     public function block_content($context, array $blocks = array())
     {
-        // line 17
+        // line 22
         echo "
      ";
     }
@@ -71,7 +99,7 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
 
     public function getDebugInfo()
     {
-        return array (  58 => 17,  55 => 16,  48 => 22,  46 => 21,  42 => 19,  40 => 16,  36 => 14,  34 => 13,  20 => 1,);
+        return array (  86 => 22,  83 => 21,  53 => 27,  51 => 26,  47 => 24,  45 => 21,  41 => 19,  39 => 18,  20 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -92,22 +120,50 @@ class __TwigTemplate_585ce9d669b0cf4e78e8167d3adef5137030bfe83d7d25a6743e047d6ef
     <title>personal MVC</title>
     <link rel=\"stylesheet\" href=\"../../public/css/bootstrap.min.css\" type=\"text/css\" />
     <link rel=\"stylesheet\" href=\"../../public/css/my.css\" type=\"text/css\" />
+    <link href=\"../../public/css/font-awesomee.css\" rel=\"stylesheet\">
+    <link href=\"../../public/css/animate.css\" rel=\"stylesheet\">
+    <link href=\"../../public/css/stylef066.css?v=2.1.0\" rel=\"stylesheet\">
     <script type=\"text/javascript\" src=\"../../public/js/jquery-3.0.0.js\"></script>
 
   </head>
-  <body>
+  <body class=\"top-navigation\">
+  <div id=\"wrapper\">
+    <div id=\"page-wrapper\" class=\"gray-bg\">
   {% include 'common/views/header.html' %}
-  <div class=\"container background\">
-    <content>
+    <div class=\"wrapper wrapper-content\">
+      <div class=\"container\">
      {% block content%}
 
      {% endblock %}
-    </content>
+    </div>
     </div>
   {% include 'common/views/footer.html' %}
-  </body>
+    </div>
+  </div>>
   <script type=\"text/javascript\" src=\"../../public/js/bootstrap.min.js\"></script>
   <script type=\"text/javascript\" src=\"../../public/js/core.js\"></script>
+  <script src=\"../../public/js/plugins/metisMenu/jquery.metisMenu.js\"></script>
+  <script src=\"../../public/js/plugins/slimscroll/jquery.slimscroll.min.js\"></script>
+
+  <!-- Custom and plugin javascript -->
+  <script src=\"../../public/js/hplus28b5.js\"></script>
+  <script src=\"../../public/js/plugins/pace/pace.min.js\"></script>
+
+  <!-- Flot -->
+  <script src=\"../../public/js/plugins/flot/jquery.flot.js\"></script>
+  <script src=\"../../public/js/plugins/flot/jquery.flot.tooltip.min.js\"></script>
+  <script src=\"../../public/js/plugins/flot/jquery.flot.resize.js\"></script>
+
+  <!-- ChartJS-->
+  <script src=\"../../public/js/plugins/chartJs/Chart.min.js\"></script>
+
+  <!-- Peity -->
+  <script src=\"../../public/js/plugins/peity/jquery.peity.min.js\"></script>
+
+  <!-- Peity demo -->
+  <script src=\"../../public/js/demo/peity-demo.js\"></script>
+  </body>
+
 </html>", "common/views/common.html", "D:\\person_git\\Permvc\\PerMVC\\application\\common\\views\\common.html");
     }
 }

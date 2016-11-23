@@ -1,12 +1,3 @@
-html{
-  height: 100%;
-}
-body {
-  height: 100%;
-  padding-top: 70px !important;
-}
-.background{
-  background-image: url("../imgs/pic2.jpg");
-  height: 92%;
-  background-size: cover;
-}
+/*!
+自定义样式放置文件
+*/

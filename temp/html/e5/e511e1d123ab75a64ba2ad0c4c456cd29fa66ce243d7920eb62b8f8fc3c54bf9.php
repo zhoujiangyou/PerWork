@@ -16,11 +16,14 @@ class __TwigTemplate_2c7d2bff7d6683685883e3081baea56116882ddd37db46487179150b5c9
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<nav class=\"navbar navbar-default navbar-fixed-bottom\" role=\"navigation\">
-    <div class=\"container\">
-
+        echo "<div class=\"footer\">
+    <div class=\"pull-right\">
+        By：<a href=\"https://github.com/zhoujiangyou\" target=\"_blank\">zhouht</a>
     </div>
-</nav>";
+    <div>
+        <strong>Copyright</strong> zhouht &copy; 2016
+    </div>
+</div>";
     }
 
     public function getTemplateName()
@@ -43,10 +46,13 @@ class __TwigTemplate_2c7d2bff7d6683685883e3081baea56116882ddd37db46487179150b5c9
 
     public function getSourceContext()
     {
-        return new Twig_Source("<nav class=\"navbar navbar-default navbar-fixed-bottom\" role=\"navigation\">
-    <div class=\"container\">
-
+        return new Twig_Source("<div class=\"footer\">
+    <div class=\"pull-right\">
+        By：<a href=\"https://github.com/zhoujiangyou\" target=\"_blank\">zhouht</a>
     </div>
-</nav>", "common/views/footer.html", "D:\\person_git\\Permvc\\PerMVC\\application\\common\\views\\footer.html");
+    <div>
+        <strong>Copyright</strong> zhouht &copy; 2016
+    </div>
+</div>", "common/views/footer.html", "D:\\person_git\\Permvc\\PerMVC\\application\\common\\views\\footer.html");
     }
 }
