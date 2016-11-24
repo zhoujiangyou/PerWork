@@ -3,7 +3,8 @@
 define('PerMVC',realpath(' /'));
 define('CORE',PerMVC.'/core');
 define('APP',PerMVC.'/app');
-define('DEBUG',true);
+define('DEBUG',false);
+define('VIEWDEBUG',true);
 define('MODULE','app');
 define('APPLICATION','application');
 ini_set('date.timezone','Asia/Shanghai');
@@ -15,6 +16,7 @@ if(DEBUG){
    ini_set('display_error','On');
 }else{
   ini_set('display_error','Off');
+
 }
 include CORE.'/common/function.php';
 include CORE.'/coreZ.php';

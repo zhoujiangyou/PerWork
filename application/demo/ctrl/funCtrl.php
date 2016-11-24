@@ -25,7 +25,20 @@ class funCtrl extends controller{
         $this->display('toastr');
     }
 
+    /**
+     * @throws views nestable
+     */
     public function nestable(){
         $this->display('nestable');
     }
+
+    /**
+     *  @throws views timeline
+     */
+    public function timeline(){
+
+        $this->display('timeline');
+
+    }
+
 }

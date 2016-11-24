@@ -24,7 +24,7 @@ class controller
                   $loader = new \Twig_Loader_Filesystem('application');
                   $twig = new \Twig_Environment($loader, array(
                       'cache' => 'temp/html',
-                      'debug'=>DEBUG,
+                      'debug'=>VIEWDEBUG,
                   ));
 
                   $template = $twig->loadTemplate($_SESSION['MODULE'].'/views/'.$file.'.html');

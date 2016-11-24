@@ -32,11 +32,11 @@ class __TwigTemplate_3805734f6574b93525b31ea23b015675b3d78b820ff23377b536a8e9881
                 <li class=\"dropdown\">
                     <a aria-expanded=\"false\" role=\"button\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"> 杂七杂八 <span class=\"caret\"></span></a>
                     <ul role=\"menu\" class=\"dropdown-menu\">
-                        <li><a href=\"#\">Toastr通知</a>
+                        <li><a href=\"/demo/fun/toastr\">Toastr通知</a>
                         </li>
-                        <li><a href=\"#\">嵌套列表</a>
+                        <li><a href=\"/demo/fun/nestable\">嵌套列表</a>
                         </li>
-                        <li><a href=\"#\">时间轴</a>
+                        <li><a href=\"/demo/fun/timeline\">时间轴</a>
                         </li>
                         <li><a href=\"#\">模态窗口</a>
                         </li>
@@ -136,11 +136,11 @@ class __TwigTemplate_3805734f6574b93525b31ea23b015675b3d78b820ff23377b536a8e9881
                 <li class=\"dropdown\">
                     <a aria-expanded=\"false\" role=\"button\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"> 杂七杂八 <span class=\"caret\"></span></a>
                     <ul role=\"menu\" class=\"dropdown-menu\">
-                        <li><a href=\"#\">Toastr通知</a>
+                        <li><a href=\"/demo/fun/toastr\">Toastr通知</a>
                         </li>
-                        <li><a href=\"#\">嵌套列表</a>
+                        <li><a href=\"/demo/fun/nestable\">嵌套列表</a>
                         </li>
-                        <li><a href=\"#\">时间轴</a>
+                        <li><a href=\"/demo/fun/timeline\">时间轴</a>
                         </li>
                         <li><a href=\"#\">模态窗口</a>
                         </li>
