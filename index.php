@@ -1,9 +1,8 @@
 <?php
-
 define('PerMVC',realpath(' /'));
 define('CORE',PerMVC.'/core');
 define('APP',PerMVC.'/app');
-define('DEBUG',false);
+define('DEBUG',true);
 define('VIEWDEBUG',true);
 define('MODULE','app');
 define('APPLICATION','application');
