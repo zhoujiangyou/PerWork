@@ -7,13 +7,21 @@ namespace Composer\Autoload;
 class ComposerStaticInit7eaa1d0c5c3ccea13067ceb138df49bc
 {
     public static $files = array (
-        'c7359326b6707d98bdc176bf9ddeaebf' => __DIR__ . '/..' . '/catfan/medoo/medoo.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
             'Whoops\\' => 7,
+        ),
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
         ),
         'P' => 
         array (
@@ -26,6 +34,7 @@ class ComposerStaticInit7eaa1d0c5c3ccea13067ceb138df49bc
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Medoo\\' => 6,
         ),
     );
 
@@ -33,6 +42,14 @@ class ComposerStaticInit7eaa1d0c5c3ccea13067ceb138df49bc
         'Whoops\\' => 
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
         'Psr\\Log\\' => 
         array (
@@ -45,6 +62,10 @@ class ComposerStaticInit7eaa1d0c5c3ccea13067ceb138df49bc
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Medoo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/catfan/medoo/src',
         ),
     );
 

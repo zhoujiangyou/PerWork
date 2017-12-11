@@ -7,9 +7,10 @@ namespace core\lib;
 class controller
 {
       public $ass;
-        function __construct()
+      public $module;
+        function __construct($module)
         {
-
+            $this->module=$module;
         }
 
         public function assign($name,$data){
@@ -18,16 +19,16 @@ class controller
 
         //show template
          public function display($file){
-               $filed = APPLICATION.'/'.$_SESSION['MODULE'].'/views/'.$file.'.html';
+               $filed = APPLICATION.'/'.$this->module.'/views/'.$file.'.html';
                if(is_file($filed)){
-                  \Twig_Autoloader::register();
+
                   $loader = new \Twig_Loader_Filesystem('application');
                   $twig = new \Twig_Environment($loader, array(
                       'cache' => 'temp/html',
                       'debug'=>VIEWDEBUG,
                   ));
 
-                  $template = $twig->loadTemplate($_SESSION['MODULE'].'/views/'.$file.'.html');
+                  $template = $twig->loadTemplate($this->module.'/views/'.$file.'.html');
                   $template->display($this->ass?$this->ass:[]);
                }else{
                    throw new \ErrorException('没有找到匹配视图文件'.$file);

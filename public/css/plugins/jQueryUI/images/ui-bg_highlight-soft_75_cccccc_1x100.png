@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Error>
-  <Code>NoSuchKey</Code>
-  <Message>The specified key does not exist.</Message>
-  <Key>css/plugins/jQueryUI/images/ui-bg_highlight-soft_75_cccccc_1x100.png</Key>
-  <RequestId>5535FF849E78350B1BF48EFF</RequestId>
-  <HostId>hplus.oss.aliyuncs.com</HostId>
-</Error>

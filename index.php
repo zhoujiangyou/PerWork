@@ -2,8 +2,8 @@
 define('PerMVC',realpath(' /'));
 define('CORE',PerMVC.'/core');
 define('APP',PerMVC.'/app');
-define('DEBUG',true);
-define('VIEWDEBUG',true);
+define('DEBUG',false);
+define('VIEWDEBUG',false);
 define('MODULE','app');
 define('APPLICATION','application');
 ini_set('date.timezone','Asia/Shanghai');

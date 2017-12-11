@@ -4,35 +4,29 @@
  * User: 周海天
  */
 namespace core;
-use application\common\ctrl\indexCtrl;
-
+use core\lib\route;
 class coreZ
 {
    public static $classMap =array();
     static   public function run(){
-        session_start() ;
-         $route = new \core\lib\route();
-         $moduleClass=$route->module;
-         $ctrlClass = $route->ctrl;
-         $actionClass = $route->action;
+        $route = new route();
+         $moduleClass=$route->getModule();
+         $ctrlClass = $route->getController();
+         $actionClass = $route->getAction();
          $ctrlfile=PerMVC.APPLICATION.'/'.$moduleClass.'/ctrl/'.$ctrlClass.'Ctrl.php';
          $conClass = '\\'.APPLICATION.'\\'.$moduleClass.'\ctrl\\'.$ctrlClass.'Ctrl';
-         $_SESSION['MODULE']=$moduleClass;
          if(is_file($ctrlfile)){
-           include $ctrlfile ;
-           $ctrl = new $conClass();
+           include_once $ctrlfile ;
+           $ctrl = new $conClass($moduleClass);
              try{
                  $ctrl->$actionClass();
              }catch (\Error $e){
-                 //todo 跳转500页面
-
-                 /*一个比较尴尬的问题。通过header 跳转 页面中会多次反复跳转。
-                  * include 正常页面中会出现500 或者404 页面内容
-                  * echo 的话 会出现问题 网页底部出现。最后特么感觉应该程序哪里有问题 不停的在抛出。然后我这边不清楚是什么情况。
-                  * 先要把程序中的错误问题解决才行
-                  */
-
-
+                 //debug模式下显示错误信息
+                 if(DEBUG){
+                     throw new \ErrorException($e->getFile().$e->getLine().$e->getMessage());
+                 }else{
+                     header('Location:/500.html');
+                 }
              }
 
          }else{
@@ -40,8 +34,8 @@ class coreZ
              if(DEBUG){
                  throw new \ErrorException('找不到控制器'.$moduleClass.'/'.$ctrlClass);
              }else{
-                 //todo 跳转404页面
-
+                 //路由404处理
+                 header('Location:/404.html');
              }
 
          }
