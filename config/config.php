@@ -13,4 +13,7 @@ return[
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',),
+     "default_module"=>'app',
+     "default_controller"=>'index',
+     "default_action"=>'index',
 ];

@@ -6,7 +6,7 @@ namespace core\lib;
  * Date: 2016/11/8
  * Time: 15:30
  */
-
+use \Noodlehaus\Config as nconfig;
 class config{
 
     private static $_instance;
@@ -16,7 +16,7 @@ class config{
      */
     private  function __construct()
     {
-      $this->conf= \Noodlehaus\Config::load('config');
+      $this->conf= nconfig::load('config');
     }
     //创建 __clone 防止对象被克隆
     public function __clone(){

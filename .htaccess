@@ -3,6 +3,6 @@
   RewriteEngine On
     #默认情况
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^/?(.*)$ index.php?$1 [QSA,PT,L]
+    RewriteRule ^/?(.*)$ index.php?s=$1 [QSA,PT,L]
     RewriteCond $1 !^(index\.php|images|robots\.txt)
 </IfModule>
